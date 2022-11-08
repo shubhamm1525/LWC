@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Child Component Basic" icon-name="utility:user">
+
+       
+            <div class="slds-var-m-around_medium">
+                <b>{myData.Name}</b>
+                <br />
+                <b>{myData.Phone}</b>
+            </div>
+  
+        <template if:false={myData}>
+            <b>No Data Found</b>
+        </template>
+    </lightning-card>
+</template>

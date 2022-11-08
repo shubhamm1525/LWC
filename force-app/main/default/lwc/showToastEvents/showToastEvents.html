@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Show Toast Event Message" icon-name="utility:user">
+
+
+        <div class="slds-var-m-around_medium">
+             <lightning-button label="Error" onclick={showError} ></lightning-button>
+             <lightning-button label="Warning" onclick={showWarning} ></lightning-button>
+             <lightning-button label="Success" onclick={showSuccess} ></lightning-button>
+             <lightning-button label="Info" onclick={showInfo} ></lightning-button>
+        </div>
+
+        <lightning-button-group>
+            <lightning-button label="Refresh"></lightning-button>
+            <lightning-button label="Edit"></lightning-button>
+            <lightning-button label="Save"></lightning-button>
+        </lightning-button-group>
+
+
+    </lightning-card>
+
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">Card Body Narrow (custom component)</p>
+        <p slot="footer">Card Footer</p>
+    </lightning-card>
+</template>

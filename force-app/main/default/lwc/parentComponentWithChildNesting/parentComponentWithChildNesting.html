@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Parent Component With Child Nesting" icon-name="utility:user">
+        <div class="slds-var-m-around_medium">
+            <lightning-input label="Search" onchange={handleOnChange}></lightning-input>
+
+            <template for:each={myDataFromParents} for:item="acc">
+                <c-child-Component-Basic my-data={acc} key={acc.Id}> </c-child-Component-Basic>
+            </template>
+      
+        </div>         
+               
+     
+       
+
+    </lightning-card>
+</template>

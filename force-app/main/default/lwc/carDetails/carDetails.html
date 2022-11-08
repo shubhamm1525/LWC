@@ -1,0 +1,18 @@
+<template>
+  <!--<template if:true={carFound}>  -->  
+    
+        <lightning-layout multiple-rows="true">
+            <lightning-tabset active-tab-value={selectedTabValue}>
+                <lightning-tab label="Car Details" value="cardeatils" onactive={tabChangeHandler}>
+                    One Content !
+                </lightning-tab>
+                <lightning-tab label="Add Car Experience" value="addexperience" onactive={tabChangeHandler}>
+                    Two Content !
+                </lightning-tab>
+                <lightning-tab label="View Car Experience" value="viewexperience" onactive={tabChangeHandler}>
+                    Three Content !
+                </lightning-tab>
+            </lightning-tabset>
+        </lightning-layout>
+    </template>  
+</template>

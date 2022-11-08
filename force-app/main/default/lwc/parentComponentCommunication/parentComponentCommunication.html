@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent Component Communication" icon-name="utility:user">
+
+
+        <div class="slds-var-m-around_medium">
+            COUNT OF CLICKS : {clicks}
+            <c-child-Component-Communication onincreasecount={handleIncreaseCount} ></c-child-Component-Communication>
+        </div>
+
+
+    </lightning-card>
+</template>

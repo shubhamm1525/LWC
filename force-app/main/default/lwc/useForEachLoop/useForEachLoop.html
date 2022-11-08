@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Using FOR-EACH Loop" icon-name="utility:user">
+        <div class="slds-var-p-around_medium">
+            <table class="slds-table slds-table_bordered slds-border_left slds-border_right">
+
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                         Student Name
+                    </th>
+                    <th class="" scope="col">
+                        Class
+                    </th>
+                    <th class="" scope="col">
+                        Fees
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <template for:each={Students} for:item="student"> 
+                    <tr key={student.Id} >
+                        
+                        <td > {student.Name}</td>
+                        <td  >{student.Class}</td>
+                        <td  >{student.Fees}</td>
+                   
+                    </tr>
+                </template>
+                
+            
+            </tbody>
+
+            </table>
+        </div>
+        </lightning-card>
+</template>

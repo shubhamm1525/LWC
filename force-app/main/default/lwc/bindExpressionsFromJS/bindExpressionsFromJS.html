@@ -1,0 +1,30 @@
+<template>
+    
+<lightning-card title="Bind Expressions From JS" icon-name="utility:user">
+    <div class="slds-p-around_medium">
+        <lightning-input label="Full Name" onchange={changeHandler}></lightning-input>
+        <lightning-input type="number" label="Phone" onchange={changeHandler}></lightning-input>
+        <lightning-input type="email" label="Email" onchange={changeHandler}></lightning-input>
+    </div>
+
+
+
+<div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="6" padding="around-small">
+            <div class=" slds-p-around_small "><p>Full Name : {fullName} </p></div>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" padding="around-small">
+            <div class=" slds-p-around_small "><p>Phone : {phone} </p></div>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" padding="around-small">
+            <div class=" slds-p-around_small "><p>Email : {email} </p></div>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" padding="around-small">
+            <div class=" slds-p-around_small "><p>Email : {email} </p></div>
+        </lightning-layout-item>
+    </lightning-layout>
+</div>
+</lightning-card>
+
+</template>

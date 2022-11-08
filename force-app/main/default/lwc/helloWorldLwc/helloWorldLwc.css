@@ -1,0 +1,15 @@
+.greeting-class{
+    color:green;
+}
+
+p{
+    color:red;
+}
+
+div{
+    border: 5px solid seagreen;
+}
+
+:host{
+    border: 5px solid red;
+}

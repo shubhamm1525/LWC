@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Bind Imperative Method" icon-name="utility:user">
+        
+        <div class="slds-var-m-around_medium">
+            <lightning-button variant="brand" label="Get Accounts" title="Get Accounts" onclick={buttonClick}
+                ></lightning-button>
+        </div>
+
+        <template if:true={accounts}>
+            <div class="slds-var-m-around_medium">
+                <template for:each={accounts} for:item="acc">
+                    <lightning-layout key={acc.Id} class="slds-var-m-vertical_x-small">
+                        <lightning-layout-item flexibility="grow" style="min-width:350px">
+                            {acc.Name}
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </template>
+            </div>
+        </template>
+    </lightning-card>
+</template>
